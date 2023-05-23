@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <title>E-commerce</title>
+
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" type="text/css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="script.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+
+    <body>
+        <!-- HOME PAGE -->
+        <div data-role="page" id="home" data-theme="b">
+
+            <div data-role="content">
+            
+                <div data-role="header">
+                    <h1>Shopping Store Recommendation</h1>
+                </div>
+            
+            <div class="choice_list">
+            
+            <h1> What would you like to buy? </h1>
+            
+            <ul data-role="listview" data-inset="true" >
+            
+            <li><a href="#choice" data-transition="slidedown"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa27ZCjAeyHPoePN2NKq8TeYSoevNbK2hHjg&usqp=CAU"/> <h3>Electronics</h3></a></li>
+            
+            <li><a href="choose_town.HTML" data-transition="slidedown"> <img src="https://www.noupe.compizza.jpg"/> <h3> Shoes </h3></a></li>
+            
+            <li><a href="choose_town.HTML" data-transition="slidedown"> <img src="https://www.noupe.comkebap.jpg"/> <h3> Clothes </h3></a></li>
+            
+            <li><a href="choose_town.HTML" data-transition="slidedown"> <img src="https://www.noupe.comburger.jpg"/> <h3> Grocery </h3></a></li>
+            
+            <li><a href="choose_town.HTML" data-transition="slidedown"> <img src="https://www.noupe.comnems.jpg"/> <h3> Medicines </h3></a></li>
+            
+            
+            </ul>
+            
+            </div>
+            
+            </div>
+            
+            </div>
+        <!-- END OF HOME PAGE -->
+
+        <div id="choice" data-role="page" data-add-back-btn="true">
+
+            <div data-role="header">
+            
+            <h1>Store Picker</h1>
+            
+            </div>
+            
+            <div data-role="content">
+            
+            <div class="choice_list">
+            
+            <h1> Where do you live? </h1>
+            
+            <ul data-role="listview" data-inset="true" data-filter="true" >
+            
+            <li><a href="#choose_store" data-transition="slidedown"> Pune</a> </li>
+            
+            <li><a href="choose_restaurant.HTML" data-transition="slidedown">Navi Mumbai</a> </li>
+            
+            <li><a href="choose_restaurant.HTML" data-transition="slidedown"> Thane</a> </li>
+            
+            <li><a href="choose_restaurant.HTML" data-transition="slidedown"> Nashik</a> </li>
+            
+            …
+            
+            </ul>
+            
+            </div>
+            
+            </div>
+            
+            </div>
+
+
+
+        <!-- ADD PAGE -->
+        <div id="choose_store" data-role="page" data-add-back-btn="true">
+
+            <div data-role="header">
+            
+            <h1> Store Picker</h1>
+            
+            </div>
+            
+            <div data-role="content">
+            
+            <div class="choice_list">
+            
+            <h1> Please choose a store</h1>
+            
+            <ul data-role="listview" data-inset="true" >
+            
+            <li><a href="#restau" data-transition="slidedown"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMpbY7jt31J5jHCY6jk1CyDHSTuRQTdCmbOA&usqp=CAU"/> <h2> Croma</h2> <p> 4 stars </p></a></li>
+            
+            <li><a href="restaurant.HTML" data-transition="slidedown"> <img src="https://www.noupe.comrestau02_mini.jpg "/> <h2> XYZ store </h2> <p> 4 stars </p> </a></li>
+            
+            <li><a href="restaurant.HTML" data-transition="slidedown"> <img src="https://www.noupe.comrestau03_mini.jpg "/> <h2> Jio Mall</h2> <p> 1 star </p> </a></li>
+            
+            <li><a href="restaurant.HTML" data-transition="slidedown"> <img src="https://www.noupe.comrestau04_mini.jpg "/> <h2> Tai Shan</h2> <p> 3 stars </p> </a></li>
+            
+            <li><a href="restaurant.HTML" data-transition="slidedown"> <img src="https://www.noupe.com restau05_mini.jpg"/> <h2> Arcade</h2> <p> 2 stars </p> </a></li>
+            
+            </ul>
+            
+            </div>
+            
+            </div>
+            
+            </div>
+        <!-- END OF ADD PAGE -->
+
+            <div id="restau" data-role="page" data-add-back-btn="true" data-theme="b">
+            
+                <div data-role="header">
+                    <h1> Shopping Store Recommendation</h1>
+                </div> 
+            
+                <div data-role="content">
+                <div class="ui-grid-a" id="restau_infos">
+                    <div class="ui-block-a">
+                    <h1> Croma </h1>
+                    <p><strong>Shop anytime</strong></p>
+                    <p> Popular Products: </p>
+                        <ul>
+                            <li> Televisions</li>
+                            <li>Smart Watches</li>
+                            <li> Washing Machines </li>
+                        </ul>
+                    </div>
+                    <div class="ui-block-b">
+                    <p><img src="" alt="jeannette photo"/></p>
+                    <p><a href="http://www.google.fr" rel="external" data-role="button"> See our website</a></p>
+                    </div>
+                </div><!-- /grid-a -->
+                <hr/>
+            
+                <div class="ui-grid-a" id="contact_infos">
+                    <div class="ui-block-a">
+                    <h2> Contact us</h2>
+                    <p>abc street. Baner</p>
+                    <p> Pune	</p>
+                    </div>
+                    <div class="ui-block-b">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MbRrwlP4MtsSXkIG-XBxvCnAQi5NuzQpqQ&usqp=CAU alt="plan jeanette"/>
+                    </div>
+                </div><!-- /grid-a -->
+
+
+                
+                <div id="contact_buttons">
+                    <a href="http://maps.google.fr/maps?q=jeannette+et+les+cycleux&hl=fr&sll=46.75984,1.738281&sspn=10.221882,18.764648&hq=jeannette+et+les+cycleux&t=m&z=13&iwloc=A" data-role="button" data-icon="maps"> Find us on Google Maps </a>
+                    <a href="tel:0388161072"  data-role="button" data-icon="tel"> Call us </a>
+                </div>
+                <hr/>
+            
+                <div id="notation">
+                <form>
+                <label for="select-choice-0" class="select"><h2> User rating </h2></label>
+                    <select name="note_utilisateur" id="note_utilisateur" data-native-menu="false" data-theme="c" >
+                       <option value="one" class="one"> Not good at all </option>
+                       <option value="two" class="two">Average </option>
+                       <option value="three" class="three">Pretty good </option>
+                       <option value="four" class="four"> Excellent </option>
+                    </select>
+                </form>
+                </div>
+                </div>
+            
+            </div>
+
+
+
+       
+        
+        
+        
+                
+
+    </body>
+</html>
